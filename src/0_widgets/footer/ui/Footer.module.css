@@ -1,0 +1,5 @@
+.footer {
+  height: var(--height-footer);
+  background: var(--color-background-inverse-0);
+  color: var(--color-text-inverse-0);
+}

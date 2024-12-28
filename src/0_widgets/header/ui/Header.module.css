@@ -1,0 +1,7 @@
+.header {
+  display: flex;
+  gap: var(--gap);
+  height: var(--height-header);
+  background: var(--color-background-0);
+  color: var(--color-text-0);
+}
