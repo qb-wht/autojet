@@ -1,6 +1,6 @@
 import Link from 'next/link';
+import { Logo } from '@/1_entities/logo';
 import s from './Header.module.css';
-import { Logo } from '@/2_entities/logo';
 
 export const Header = () => {
   return (
@@ -10,4 +10,4 @@ export const Header = () => {
       <Link href={'./about'}>About</Link>
     </div>
   );
-}
+};

@@ -1,5 +1,5 @@
-import { Header } from '@/0_widgets/header';
-import { Footer } from '@/0_widgets/footer';
+import { Header } from '@/3_widgets/header';
+import { Footer } from '@/3_widgets/footer';
 import { Roboto } from 'next/font/google';
 import '@/app/styles/globals.css';
 

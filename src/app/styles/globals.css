@@ -10,7 +10,7 @@
   --color-background-0: white;
   --color-background-inverse-0: rgb(36, 36, 36);
 
-  --color-primary-0: #FF6B00;
+  --color-primary-0: #ff6b00;
   --color-secondary-0: #62ff00;
 
   --color-text-0: rgb(36, 36, 36);
@@ -22,7 +22,8 @@
   --height-footer: calc(20 * var(--gap));
 }
 
-html, body {
+html,
+body {
   background-color: var(--color-background-0);
   height: 100%;
   height: 100%;

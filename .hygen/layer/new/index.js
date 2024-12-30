@@ -5,7 +5,7 @@ module.exports = {
         type: 'select',
         name: 'layerType',
         message: 'FSD layer:',
-        choices: ['3_shared', '2_entities', '1_features', '0_widgets'],
+        choices: ['0_shared', '1_entities', '2_features', '3_widgets'],
       },
       {
         type: 'input',
@@ -20,11 +20,12 @@ NN
 -c, --component : Генерировать component файл?
 -p, --props : Генерировать props для компонента?
 -s, --styles : Генерировать styles для компонента?
+-e, --exports : Генерировать index export файл?
 NN
         `
           .trim()
           .replaceAll('NN', '\n'),
-        default: '-cps',
+        default: '-cpse',
       },
     ];
 
@@ -55,12 +56,14 @@ function attrParser(str) {
       c: 'component',
       p: 'props',
       s: 'styles',
+      e: 'exports',
     };
 
     const attrs = {
       component: false,
       props: false,
       styles: false,
+      exports: false,
     };
 
     if (/^-{1,2}all$/.test(str)) {
@@ -88,9 +91,14 @@ function attrParser(str) {
       attrs.styles = true;
     }
 
+    if (/^(-e|--exports)$/.test(str)) {
+      isDetailed = true;
+      attrs.exports = true;
+    }
+
     if (isDetailed) return attrs;
 
-    if (/-[cps][a-z]+/.test(str)) {
+    if (/-[cpse][a-z]+/.test(str)) {
       newStr = str.substr(1);
       newStr.split('').forEach((letter) => {
         attrs[lettersToAttrs[letter]] = true;
