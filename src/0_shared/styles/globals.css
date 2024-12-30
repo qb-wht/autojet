@@ -19,7 +19,7 @@
   --gap: 4px;
 
   --height-header: calc(10 * var(--gap));
-  --height-footer: calc(20 * var(--gap));
+  --height-footer: calc(80 * var(--gap));
 }
 
 html,
