@@ -56,13 +56,20 @@
   --color-secondary-dark-8: #000233;
   --color-secondary-dark-9: #00011a;
 
-  --color-text-0: #1a1c1e;
+  --color-text: #1a1c1e;
+  --color-text-1: #333333;
+  --color-text-2: #4d4d4d;
+  --color-text-3: #666666;
+  --color-text-4: #808080;
+  --color-text-5: #999999;
+  --color-text-6: #b3b3b3;
+  --color-text-7: #cccccc;
+  --color-text-8: #e6e6e6;
+  --color-text-9: #ffffff;
   --color-text-inverse-0: white;
 
   --color-text-inner-0: white;
   --color-text-inner-inverse-0: white;
-
-  --color-border-0: #e4e4e4;
 
   --gap: 4px;
 

@@ -12,8 +12,8 @@ export const Button = (props: ButtonProps) => {
     borderRadius = 'medium',
     gap = '1',
     disable,
-    children,
     variant = 'fill',
+    ...anotherProps
   } = props;
 
   const mods: ClassNameMods = {
@@ -29,5 +29,5 @@ export const Button = (props: ButtonProps) => {
     `br-${borderRadius}`
   );
 
-  return <button className={classNames.build(mods)}>{children}</button>;
+  return <button className={classNames.build(mods)} {...anotherProps} />;
 };

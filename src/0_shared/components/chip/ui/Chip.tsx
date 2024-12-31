@@ -5,7 +5,14 @@ import { cn } from '@/0_shared/utils';
 export type ChipProps = { variant: Variant } & PropsOf<HTMLDivElement> & DesignSystem;
 
 export const Chip = (props: ChipProps) => {
-  const { color = 'primary', size = 'l', borderRadius = 'medium', gap = '1', children, variant = 'fill' } = props;
+  const {
+    color = 'primary',
+    size = 'l',
+    borderRadius = 'medium',
+    gap = '1',
+    variant = 'fill',
+    ...anotherProps
+  } = props;
 
   const classNames = cn(
     s.chip,
@@ -16,5 +23,5 @@ export const Chip = (props: ChipProps) => {
     `br-${borderRadius}`
   );
 
-  return <div className={classNames.build()} {...props} />;
+  return <div className={classNames.build()} {...anotherProps} />;
 };

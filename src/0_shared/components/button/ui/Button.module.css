@@ -1,5 +1,5 @@
 .button {
-  transition: background-color var(--animation-duration);
+  transition: all var(--animation-duration);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -18,10 +18,12 @@
   border: 1px solid var(--color-primary);
 
   &:hover {
+    border: 1px solid var(--color-primary-dark-1);
     background-color: var(--color-primary-dark-1);
   }
 
   &:active {
+    border: 1px solid var(--color-primary-dark-2);
     background-color: var(--color-primary-dark-2);
   }
 }
@@ -32,10 +34,12 @@
   border: 1px solid var(--color-secondary);
 
   &:hover {
+    border: 1px solid var(--color-secondary-dark-1);
     background-color: var(--color-secondary-dark-1);
   }
 
   &:active {
+    border: 1px solid var(--color-secondary-dark-2);
     background-color: var(--color-secondary-dark-2);
   }
 }
@@ -46,10 +50,12 @@
   border: 1px solid var(--color-primary-light-9);
 
   &:hover {
+    border: 1px solid var(--color-primary-light-8);
     background-color: var(--color-primary-light-8);
   }
 
   &:active {
+    border: 1px solid var(--color-primary-light-7);
     background-color: var(--color-primary-light-7);
   }
 }
@@ -60,10 +66,12 @@
   border: 1px solid var(--color-secondary-light-9);
 
   &:hover {
+    border: 1px solid var(--color-secondary-light-8);
     background-color: var(--color-secondary-light-8);
   }
 
   &:active {
+    border: 1px solid var(--color-secondary-light-7);
     background-color: var(--color-secondary-light-7);
   }
 }
@@ -102,10 +110,12 @@
   border: 1px solid var(--color-background-0);
 
   &:hover {
+    border: 1px solid var(--color-primary-light-9);
     background-color: var(--color-primary-light-9);
   }
 
   &:active {
+    border: 1px solid var(--color-primary-light-8);
     background-color: var(--color-primary-light-8);
   }
 }
@@ -116,10 +126,12 @@
   border: 1px solid var(--color-background-0);
 
   &:hover {
+    border: 1px solid var(--color-secondary-light-9);
     background-color: var(--color-secondary-light-9);
   }
 
   &:active {
+    border: 1px solid var(--color-secondary-light-8);
     background-color: var(--color-secondary-light-8);
   }
 }
