@@ -34,7 +34,16 @@ NN
 
       const projectPath = 'src/';
 
-      const absPath = `${projectPath}/${layerType}`;
+      const getLayerPath = (projectPath, layerType) => {
+        switch (layerType) {
+          case '0_shared':
+            return `${projectPath}/${layerType}/components`;
+          default:
+            return `${projectPath}/${layerType}`;
+        }
+      };
+
+      const absPath = getLayerPath(projectPath, layerType);
 
       optionalsData = attrParser(optionals);
 
