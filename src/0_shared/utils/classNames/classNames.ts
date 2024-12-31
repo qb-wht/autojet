@@ -1,6 +1,6 @@
-type Mods = Record<string, boolean | string | undefined>;
+export type ClassNameMods = Record<string, boolean | string | undefined>;
 
-export function classNames(className: string | Iterable<string>, ...classNames: string[]) {
+export function cn(className: string | Iterable<string>, ...classNames: string[]) {
   if (typeof className === 'string') {
     return new ClassName([className, ...classNames]);
   }
@@ -16,7 +16,7 @@ export class ClassName {
     return this;
   }
 
-  build(mods?: Mods): string {
+  build(mods?: ClassNameMods): string {
     if (mods) {
       this.classes = this.classes.concat(
         Object.entries(mods)
