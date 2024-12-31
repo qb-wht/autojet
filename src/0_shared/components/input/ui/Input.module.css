@@ -1,0 +1,61 @@
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  transition: all var(--animation-duration);
+  border: 1px solid var(--color-text-8);
+  padding: var(--gap);
+  padding-left: calc(var(--gap) * 5);
+
+  &:focus {
+    box-shadow: 0 0 10px 1px var(--color-text-8);
+  }
+
+  &::placeholder {
+    color: var(--color-text-7);
+  }
+}
+
+.iconContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: calc(var(--gap) * 10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input.icon {
+  padding-left: calc(var(--gap) * 9);
+}
+
+.icon {
+  color: var(--color-text-2);
+}
+
+/* * И стили для Color */
+/* * 'primary' | 'secondary' */
+.color-primary {
+  &:hover {
+    border: 1px solid var(--color-primary);
+  }
+
+  &:focus {
+    border: 1px solid var(--color-primary);
+  }
+}
+
+.color-secondary {
+  &:hover {
+    border: 1px solid var(--color-secondary);
+  }
+
+  &:focus {
+    border: 1px solid var(--color-secondary);
+  }
+}
