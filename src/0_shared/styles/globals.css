@@ -8,6 +8,11 @@
   outline: none;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --color-background-0: white;
   --color-background-inverse-0: #1a1c1e;

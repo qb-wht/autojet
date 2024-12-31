@@ -4,7 +4,7 @@ import { ComponentProps } from 'react';
 import { DesignSystem, Variant } from '@/0_shared/types';
 import { cn } from '@/0_shared/utils';
 
-export type LinkProps = { variant: Variant; isUnderline?: boolean } & ComponentProps<typeof NextLink> & DesignSystem;
+export type LinkProps = { variant?: Variant; isUnderline?: boolean } & ComponentProps<typeof NextLink> & DesignSystem;
 
 export const Link = (props: LinkProps) => {
   const {
