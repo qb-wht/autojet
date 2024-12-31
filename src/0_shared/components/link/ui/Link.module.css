@@ -1,0 +1,147 @@
+.link {
+  transition: all var(--animation-duration);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--color-text);
+  justify-content: center;
+  padding: var(--gap) calc(var(--gap) * 3);
+  width: fit-content;
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* * Стили для Variant */
+/* * 'fill' | 'fillLight' | 'outline' | 'ghost' */
+/* * И стили для Color */
+/* * 'primary' | 'secondary' */
+.variant-fill.color-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    border: 1px solid var(--color-primary-dark-1);
+    background-color: var(--color-primary-dark-1);
+  }
+
+  &:active {
+    border: 1px solid var(--color-primary-dark-2);
+    background-color: var(--color-primary-dark-2);
+  }
+}
+
+.variant-fill.color-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-secondary);
+
+  &:hover {
+    border: 1px solid var(--color-secondary-dark-1);
+    background-color: var(--color-secondary-dark-1);
+  }
+
+  &:active {
+    border: 1px solid var(--color-secondary-dark-2);
+    background-color: var(--color-secondary-dark-2);
+  }
+}
+
+.variant-fillLight.color-primary {
+  background-color: var(--color-primary-light-9);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-light-9);
+
+  &:hover {
+    border: 1px solid var(--color-primary-light-8);
+    background-color: var(--color-primary-light-8);
+  }
+
+  &:active {
+    border: 1px solid var(--color-primary-light-7);
+    background-color: var(--color-primary-light-7);
+  }
+}
+
+.variant-fillLight.color-secondary {
+  background-color: var(--color-secondary-light-9);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light-9);
+
+  &:hover {
+    border: 1px solid var(--color-secondary-light-8);
+    background-color: var(--color-secondary-light-8);
+  }
+
+  &:active {
+    border: 1px solid var(--color-secondary-light-7);
+    background-color: var(--color-secondary-light-7);
+  }
+}
+
+.variant-outline.color-primary {
+  background-color: var(--color-background-0);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-primary-light-8);
+  }
+}
+
+.variant-outline.color-secondary {
+  background-color: var(--color-background-0);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+
+  &:hover {
+    background-color: var(--color-secondary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-secondary-light-8);
+  }
+}
+
+.variant-ghost.color-primary {
+  background-color: var(--color-background-0);
+  color: var(--color-primary);
+  border: 1px solid var(--color-background-0);
+
+  &:hover {
+    border: 1px solid var(--color-primary-light-9);
+    background-color: var(--color-primary-light-9);
+  }
+
+  &:active {
+    border: 1px solid var(--color-primary-light-8);
+    background-color: var(--color-primary-light-8);
+  }
+}
+
+.variant-ghost.color-secondary {
+  background-color: var(--color-background-0);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-background-0);
+
+  &:hover {
+    border: 1px solid var(--color-secondary-light-9);
+    background-color: var(--color-secondary-light-9);
+  }
+
+  &:active {
+    border: 1px solid var(--color-secondary-light-8);
+    background-color: var(--color-secondary-light-8);
+  }
+}
