@@ -1,7 +1,25 @@
 .header {
   display: flex;
-  gap: var(--gap);
-  height: var(--height-header);
-  background: var(--color-background-0);
-  color: var(--color-text-0);
+  align-items: center;
+  flex-direction: column;
+  gap: calc(var(--gap) * 3);
+  padding-top: calc(var(--gap) * 4);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 3);
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: calc(var(--gap) * 3);
 }

@@ -1,2 +1,13 @@
 .logo {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+}
+
+.mainText {
+  font-size: 38px;
+}
+
+.subText {
+  font-size: 24px;
+  padding-top: 2.5px;
 }

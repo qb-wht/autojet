@@ -21,7 +21,7 @@ export const Buttons = () => {
       </Button>
 
       <Button color="primary" variant="fill" borderRadius="round">
-        Medium
+        Round
       </Button>
 
       <Button color="primary" variant="fill" borderRadius="circle">

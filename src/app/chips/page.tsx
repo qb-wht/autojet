@@ -21,7 +21,7 @@ export const Chips = () => {
       </Chip>
 
       <Chip color="primary" variant="fill" borderRadius="round">
-        Medium
+        Round
       </Chip>
 
       <Chip color="primary" variant="fill" borderRadius="circle">
