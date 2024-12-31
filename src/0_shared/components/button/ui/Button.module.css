@@ -1,0 +1,125 @@
+.button {
+  transition: background-color var(--animation-duration);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  padding: var(--gap) calc(var(--gap) * 3);
+  width: fit-content;
+}
+
+/* * Стили для Variant */
+/* * 'fill' | 'fillLight' | 'outline' | 'ghost' */
+/* * И стили для Color */
+/* * 'primary' | 'secondary' */
+.variant-fill.color-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary-dark-1);
+  }
+
+  &:active {
+    background-color: var(--color-primary-dark-2);
+  }
+}
+
+.variant-fill.color-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-secondary);
+
+  &:hover {
+    background-color: var(--color-secondary-dark-1);
+  }
+
+  &:active {
+    background-color: var(--color-secondary-dark-2);
+  }
+}
+
+.variant-fillLight.color-primary {
+  background-color: var(--color-primary-light-9);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-light-9);
+
+  &:hover {
+    background-color: var(--color-primary-light-8);
+  }
+
+  &:active {
+    background-color: var(--color-primary-light-7);
+  }
+}
+
+.variant-fillLight.color-secondary {
+  background-color: var(--color-secondary-light-9);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary-light-9);
+
+  &:hover {
+    background-color: var(--color-secondary-light-8);
+  }
+
+  &:active {
+    background-color: var(--color-secondary-light-7);
+  }
+}
+
+.variant-outline.color-primary {
+  background-color: var(--color-background-0);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    background-color: var(--color-primary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-primary-light-8);
+  }
+}
+
+.variant-outline.color-secondary {
+  background-color: var(--color-background-0);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+
+  &:hover {
+    background-color: var(--color-secondary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-secondary-light-8);
+  }
+}
+
+.variant-ghost.color-primary {
+  background-color: var(--color-background-0);
+  color: var(--color-primary);
+  border: 1px solid var(--color-background-0);
+
+  &:hover {
+    background-color: var(--color-primary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-primary-light-8);
+  }
+}
+
+.variant-ghost.color-secondary {
+  background-color: var(--color-background-0);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-background-0);
+
+  &:hover {
+    background-color: var(--color-secondary-light-9);
+  }
+
+  &:active {
+    background-color: var(--color-secondary-light-8);
+  }
+}
