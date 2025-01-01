@@ -1,5 +1,9 @@
 @import 'normalize.css';
+@import './variables.css';
+@import './layout.css';
+@import './shared.css';
 
+/* Normalize styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,168 +17,9 @@ h1 {
   padding: 0;
 }
 
-:root {
-  --color-background-0: white;
-  --color-background-inverse-0: #1a1c1e;
-
-  --color-primary: #ff0000;
-
-  --color-primary-light-1: #ff1a1a;
-  --color-primary-light-2: #ff3333;
-  --color-primary-light-3: #ff4d4d;
-  --color-primary-light-4: #ff6666;
-  --color-primary-light-5: #ff8080;
-  --color-primary-light-6: #ff9999;
-  --color-primary-light-7: #ffb3b3;
-  --color-primary-light-8: #ffcccc;
-  --color-primary-light-9: #ffe6e6;
-
-  --color-primary-dark-1: #e60000;
-  --color-primary-dark-2: #cc0000;
-  --color-primary-dark-3: #b30000;
-  --color-primary-dark-4: #990000;
-  --color-primary-dark-5: #800000;
-  --color-primary-dark-6: #660000;
-  --color-primary-dark-7: #4d0000;
-  --color-primary-dark-8: #330000;
-  --color-primary-dark-9: #1a0000;
-
-  --color-secondary: #001eff;
-
-  --color-secondary-light-1: #1a33ff;
-  --color-secondary-light-2: #334dff;
-  --color-secondary-light-3: #4d66ff;
-  --color-secondary-light-4: #667fff;
-  --color-secondary-light-5: #8099ff;
-  --color-secondary-light-6: #99b3ff;
-  --color-secondary-light-7: #b3c1ff;
-  --color-secondary-light-8: #ccdbff;
-  --color-secondary-light-9: #e6ecff;
-
-  --color-secondary-dark-1: #0019e6;
-  --color-secondary-dark-2: #0014cc;
-  --color-secondary-dark-3: #0010b3;
-  --color-secondary-dark-4: #000b99;
-  --color-secondary-dark-5: #000680;
-  --color-secondary-dark-6: #000466;
-  --color-secondary-dark-7: #00034d;
-  --color-secondary-dark-8: #000233;
-  --color-secondary-dark-9: #00011a;
-
-  --color-text: #1a1c1e;
-  --color-text-1: #333333;
-  --color-text-2: #4d4d4d;
-  --color-text-3: #666666;
-  --color-text-4: #808080;
-  --color-text-5: #999999;
-  --color-text-6: #b3b3b3;
-  --color-text-7: #cccccc;
-  --color-text-8: #e6e6e6;
-  --color-text-9: #ffffff;
-  --color-text-inverse-0: white;
-
-  --color-text-inner-0: white;
-  --color-text-inner-inverse-0: white;
-
-  --gap: 4px;
-
-  --height-header: calc(10 * var(--gap));
-  --height-footer: calc(80 * var(--gap));
-
-  --animation-duration: 0.2s;
-
-  --max-width: 1200px;
-}
-
 html,
 body {
   background-color: var(--color-background-0);
   height: 100%;
   height: 100%;
-}
-
-/* * Стили для Gap */
-/* * '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' */
-.gap-1 {
-  gap: calc(var(--gap) * 1);
-}
-
-.gap-2 {
-  gap: calc(var(--gap) * 2);
-}
-
-.gap-3 {
-  gap: calc(var(--gap) * 3);
-}
-
-.gap-4 {
-  gap: calc(var(--gap) * 4);
-}
-
-.gap-5 {
-  gap: calc(var(--gap) * 5);
-}
-
-.gap-6 {
-  gap: calc(var(--gap) * 6);
-}
-
-.gap-7 {
-  gap: calc(var(--gap) * 7);
-}
-
-.gap-8 {
-  gap: calc(var(--gap) * 8);
-}
-
-.gap-9 {
-  gap: calc(var(--gap) * 9);
-}
-
-.gap-10 {
-  gap: calc(var(--gap) * 10);
-}
-
-/* * Стили для Size */
-/* * 's' | 'm' | 'l' | 'xl' | 'xxl' */
-.size-s {
-  height: calc(var(--gap) * 6);
-}
-
-.size-m {
-  height: calc(var(--gap) * 8);
-}
-
-.size-l {
-  height: calc(var(--gap) * 10);
-}
-
-.size-xl {
-  height: calc(var(--gap) * 12);
-}
-
-.size-xxl {
-  height: calc(var(--gap) * 14);
-}
-
-/* * Стили для BorderRadius */
-/* * 'none' | 'small' | 'medium' | 'round' | 'circle' */
-.br-none {
-  border-radius: 0;
-}
-
-.br-small {
-  border-radius: var(--gap);
-}
-
-.br-medium {
-  border-radius: calc(var(--gap) * 2);
-}
-
-.br-round {
-  border-radius: calc(var(--gap) * 10);
-}
-
-.br-circle {
-  border-radius: 100%;
 }

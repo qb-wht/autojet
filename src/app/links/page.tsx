@@ -1,11 +1,8 @@
-import s from '@/0_shared/styles/shared.module.css';
-import l from '@/0_shared/styles/layout.module.css';
-import { cn } from '@/0_shared/utils';
 import { Link } from '@/0_shared/components/link';
 
 export const Links = () => {
   return (
-    <div style={{ gap: '8px' }} className={cn(s.page, l.column).build()}>
+    <div className="page column gap-2">
       <h1>Border radius</h1>
 
       <Link href="./links" color="primary" variant="fill" borderRadius="none">

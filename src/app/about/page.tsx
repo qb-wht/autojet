@@ -1,8 +1,6 @@
-import s from '@/0_shared/styles/shared.module.css';
-
 const About = () => {
   return (
-    <div className={s.page}>
+    <div className="page">
       <h1>About</h1>
     </div>
   );

@@ -1,0 +1,93 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100% - var(--height-header));
+}
+
+/* * Стили для Gap */
+/* * '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' */
+.gap-1 {
+  gap: calc(var(--gap) * 1);
+}
+
+.gap-2 {
+  gap: calc(var(--gap) * 2);
+}
+
+.gap-3 {
+  gap: calc(var(--gap) * 3);
+}
+
+.gap-4 {
+  gap: calc(var(--gap) * 4);
+}
+
+.gap-5 {
+  gap: calc(var(--gap) * 5);
+}
+
+.gap-6 {
+  gap: calc(var(--gap) * 6);
+}
+
+.gap-7 {
+  gap: calc(var(--gap) * 7);
+}
+
+.gap-8 {
+  gap: calc(var(--gap) * 8);
+}
+
+.gap-9 {
+  gap: calc(var(--gap) * 9);
+}
+
+.gap-10 {
+  gap: calc(var(--gap) * 10);
+}
+
+/* * Стили для Size */
+/* * 's' | 'm' | 'l' | 'xl' | 'xxl' */
+.size-s {
+  height: calc(var(--gap) * 6);
+}
+
+.size-m {
+  height: calc(var(--gap) * 8);
+}
+
+.size-l {
+  height: calc(var(--gap) * 10);
+}
+
+.size-xl {
+  height: calc(var(--gap) * 12);
+}
+
+.size-xxl {
+  height: calc(var(--gap) * 14);
+}
+
+/* * Стили для BorderRadius */
+/* * 'none' | 'small' | 'medium' | 'round' | 'circle' */
+.br-none {
+  border-radius: 0;
+}
+
+.br-small {
+  border-radius: var(--gap);
+}
+
+.br-medium {
+  border-radius: calc(var(--gap) * 2);
+}
+
+.br-round {
+  border-radius: calc(var(--gap) * 10);
+}
+
+.br-circle {
+  border-radius: 100%;
+}

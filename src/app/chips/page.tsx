@@ -1,11 +1,8 @@
-import s from '@/0_shared/styles/shared.module.css';
-import l from '@/0_shared/styles/layout.module.css';
-import { cn } from '@/0_shared/utils';
 import { Chip } from '@/0_shared/components/chip';
 
 export const Chips = () => {
   return (
-    <div style={{ gap: '8px' }} className={cn(s.page, l.column).build()}>
+    <div className="page column gap-2">
       <h1>Border radius</h1>
 
       <Chip color="primary" variant="fill" borderRadius="none">

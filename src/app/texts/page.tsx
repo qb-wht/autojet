@@ -1,6 +1,3 @@
-import s from '@/0_shared/styles/shared.module.css';
-import l from '@/0_shared/styles/layout.module.css';
-import { cn } from '@/0_shared/utils';
 import { Text } from '@/0_shared/components/text';
 import { Pre } from '@/0_shared/components/pre';
 
@@ -10,7 +7,7 @@ const json = `{
 
 export const Texts = () => {
   return (
-    <div style={{ gap: '8px' }} className={cn(s.page, l.column).build()}>
+    <div className="page column gap-2">
       <h1>Tags</h1>
 
       <Text tag="p">Text p tag</Text>
