@@ -19,6 +19,7 @@ export const Chips = () => {
 
       <Input color="primary" />
       <Input color="secondary" />
+      <Input color="default" />
 
       <h1>Size</h1>
 

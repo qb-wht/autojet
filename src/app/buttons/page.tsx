@@ -64,6 +64,22 @@ export const Buttons = () => {
         Ghost
       </Button>
 
+      <Button color="default" variant="fill" borderRadius="round">
+        Fill
+      </Button>
+
+      <Button color="default" variant="fillLight" borderRadius="round">
+        FillLight
+      </Button>
+
+      <Button color="default" variant="outline" borderRadius="round">
+        Outline
+      </Button>
+
+      <Button color="default" variant="ghost" borderRadius="round">
+        Ghost
+      </Button>
+
       <h1>Size</h1>
 
       <Button size="s" color="secondary" variant="fillLight" borderRadius="round">

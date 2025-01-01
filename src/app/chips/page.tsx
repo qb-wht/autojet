@@ -64,6 +64,22 @@ export const Chips = () => {
         Ghost
       </Chip>
 
+      <Chip color="default" variant="fill" borderRadius="round">
+        Fill
+      </Chip>
+
+      <Chip color="default" variant="fillLight" borderRadius="round">
+        FillLight
+      </Chip>
+
+      <Chip color="default" variant="outline" borderRadius="round">
+        Outline
+      </Chip>
+
+      <Chip color="default" variant="ghost" borderRadius="round">
+        Ghost
+      </Chip>
+
       <h1>Size</h1>
 
       <Chip size="s" color="secondary" variant="fillLight" borderRadius="round">

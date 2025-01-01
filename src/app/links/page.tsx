@@ -64,6 +64,22 @@ export const Links = () => {
         Ghost
       </Link>
 
+      <Link href="./links" color="default" variant="fill" borderRadius="round">
+        Fill
+      </Link>
+
+      <Link href="./links" color="default" variant="fillLight" borderRadius="round">
+        FillLight
+      </Link>
+
+      <Link href="./links" color="default" variant="outline" borderRadius="round">
+        Outline
+      </Link>
+
+      <Link href="./links" color="default" variant="ghost" borderRadius="round">
+        Ghost
+      </Link>
+
       <h1>Size</h1>
 
       <Link href="./links" size="s" color="secondary" variant="fillLight" borderRadius="round">
