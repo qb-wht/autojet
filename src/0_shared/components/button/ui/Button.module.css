@@ -12,6 +12,22 @@
 /* * 'fill' | 'fillLight' | 'outline' | 'ghost' */
 /* * И стили для Color */
 /* * 'primary' | 'secondary' */
+.variant-fill.color-default {
+  background-color: var(--color-text-7);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-text-7);
+
+  &:hover {
+    border: 1px solid var(--color-text-6);
+    background-color: var(--color-text-6);
+  }
+
+  &:active {
+    border: 1px solid var(--color-text-5);
+    background-color: var(--color-text-5);
+  }
+}
+
 .variant-fill.color-primary {
   background-color: var(--color-primary);
   color: var(--color-text-inner-0);
@@ -41,6 +57,22 @@
   &:active {
     border: 1px solid var(--color-secondary-dark-2);
     background-color: var(--color-secondary-dark-2);
+  }
+}
+
+.variant-fillLight.color-default {
+  background-color: var(--color-text-8);
+  color: var(--color-text);
+  border: 1px solid var(--color-text-8);
+
+  &:hover {
+    border: 1px solid var(--color-text-7);
+    background-color: var(--color-text-7);
+  }
+
+  &:active {
+    border: 1px solid var(--color-text-6);
+    background-color: var(--color-text-6);
   }
 }
 
@@ -76,6 +108,20 @@
   }
 }
 
+.variant-outline.color-default {
+  background-color: var(--color-background-0);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+
+  &:hover {
+    background-color: var(--color-text-8);
+  }
+
+  &:active {
+    background-color: var(--color-text-7);
+  }
+}
+
 .variant-outline.color-primary {
   background-color: var(--color-background-0);
   color: var(--color-primary);
@@ -101,6 +147,22 @@
 
   &:active {
     background-color: var(--color-secondary-light-8);
+  }
+}
+
+.variant-ghost.color-default {
+  background-color: var(--color-background-0);
+  color: var(--color-text);
+  border: 1px solid var(--color-background-0);
+
+  &:hover {
+    border: 1px solid var(--color-text-8);
+    background-color: var(--color-text-8);
+  }
+
+  &:active {
+    border: 1px solid var(--color-text-7);
+    background-color: var(--color-text-7);
   }
 }
 

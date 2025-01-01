@@ -2,6 +2,7 @@
 to: "<%= component ? `${absPath}/${h.changeCase.camel(layerName)}/ui/${h.changeCase.pascal(layerName)}.tsx` : null %>"
 ---
 <%_ if (props && styles) { _%>
+import { cn } from '@/0_shared/utils';
 import {PropsOf} from '@/0_shared/types';
 import s from './<%= h.changeCase.pascal(layerName) %>.module.css';
 
@@ -10,6 +11,7 @@ export type <%= h.changeCase.pascal(layerName) %>Props = {
 } & PropsOf<HTMLDivElement>;
 <%_ } _%>
 <%_ if (props && !styles) { _%>
+import { cn } from '@/0_shared/utils';
 import {PropsOf} from '@/0_shared/types';
 
 export type <%= h.changeCase.pascal(layerName) %>Props = {
@@ -22,8 +24,11 @@ import s from './<%= h.changeCase.pascal(layerName) %>.module.css';
 
 <%_ if (props) { _%>
 export const <%= h.changeCase.pascal(layerName) %> = (props: <%= h.changeCase.pascal(layerName) %>Props) => {
+  const { className, ...anotherProps } = props;
+  const classNames = cn(s.text, className).build();
+
   return (
-    <div className={s.<%= h.changeCase.camel(layerName) %>} {...props}>
+    <div className={s.<%= h.changeCase.camel(layerName) %>} {...anotherProps}>
       <%= h.changeCase.pascal(layerName) %>
     </div>
   );

@@ -1,7 +1,6 @@
+import { cn, ClassNameMods } from '@/0_shared/utils';
 import { PropsOf, DesignSystem, Variant } from '@/0_shared/types';
 import s from './Button.module.css';
-import { cn } from '@/0_shared/utils';
-import { ClassNameMods } from '@/0_shared/utils';
 
 export type ButtonProps = { disable?: boolean; variant?: Variant } & PropsOf<HTMLButtonElement> & DesignSystem;
 
@@ -13,6 +12,7 @@ export const Button = (props: ButtonProps) => {
     gap = '1',
     disable,
     variant = 'fill',
+    className,
     ...anotherProps
   } = props;
 
@@ -26,7 +26,8 @@ export const Button = (props: ButtonProps) => {
     s[`color-${color}`],
     `size-${size}`,
     `gap-${gap}`,
-    `br-${borderRadius}`
+    `br-${borderRadius}`,
+    className
   );
 
   return <button className={classNames.build(mods)} {...anotherProps} />;

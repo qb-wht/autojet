@@ -1,8 +1,8 @@
-import { DesignSystem, PropsOf } from '@/0_shared/types';
-import s from './Input.module.css';
-import { LockKeyhole, LucideProps } from 'lucide-react';
+import { LucideProps } from 'lucide-react';
 import { cn } from '@/0_shared/utils';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
+import { DesignSystem, PropsOf } from '@/0_shared/types';
+import s from './Input.module.css';
 
 export type InputProps = {
   Icon?: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
@@ -18,10 +18,11 @@ export const Input = (props: InputProps) => {
     gap = '1',
     Icon,
     placeholder,
+    className,
     ...anotherProps
   } = props;
 
-  const classNames = cn(s.input, s[`color-${color}`], `size-${size}`, `gap-${gap}`, `br-${borderRadius}`);
+  const classNames = cn(s.input, s[`color-${color}`], `size-${size}`, `gap-${gap}`, `br-${borderRadius}`, className);
 
   return (
     <div className={s.inputContainer}>

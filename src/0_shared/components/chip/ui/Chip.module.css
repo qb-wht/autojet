@@ -11,6 +11,12 @@
 /* * 'fill' | 'fillLight' | 'outline' | 'ghost' */
 /* * И стили для Color */
 /* * 'primary' | 'secondary' */
+.variant-fill.color-default {
+  background-color: var(--color-text-7);
+  color: var(--color-text-inner-0);
+  border: 1px solid var(--color-text-7);
+}
+
 .variant-fill.color-primary {
   background-color: var(--color-primary);
   color: var(--color-text-inner-0);
@@ -21,6 +27,12 @@
   background-color: var(--color-secondary);
   color: var(--color-text-inner-0);
   border: 1px solid var(--color-secondary);
+}
+
+.variant-fillLight.color-default {
+  background-color: var(--color-text-8);
+  color: var(--color-text);
+  border: 1px solid var(--color-text-8);
 }
 
 .variant-fillLight.color-primary {
@@ -35,6 +47,12 @@
   border: 1px solid var(--color-secondary-light-9);
 }
 
+.variant-outline.color-default {
+  background-color: var(--color-background-0);
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+}
+
 .variant-outline.color-primary {
   background-color: var(--color-background-0);
   color: var(--color-primary);
@@ -45,6 +63,12 @@
   background-color: var(--color-background-0);
   color: var(--color-secondary);
   border: 1px solid var(--color-secondary);
+}
+
+.variant-ghost.color-default {
+  background-color: var(--color-background-0);
+  color: var(--color-text);
+  border: 1px solid var(--color-background-0);
 }
 
 .variant-ghost.color-primary {

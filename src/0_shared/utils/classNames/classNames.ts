@@ -1,17 +1,23 @@
+import { Nullable } from '@/0_shared/types';
+
 export type ClassNameMods = Record<string, boolean | string | undefined>;
 
-export function cn(className: string | Iterable<string>, ...classNames: string[]) {
+export function cn(className: Nullable<string> | Iterable<string>, ...classNames: Nullable<string>[]) {
   if (typeof className === 'string') {
     return new ClassName([className, ...classNames]);
+  }
+
+  if (className == null) {
+    return new ClassName([...classNames]);
   }
 
   return new ClassName([...className, ...classNames]);
 }
 
 export class ClassName {
-  constructor(private classes: string[]) {}
+  constructor(private classes: Nullable<string>[]) {}
 
-  add(className: string): ClassName {
+  add(className: Nullable<string>): ClassName {
     this.classes.push(className);
     return this;
   }

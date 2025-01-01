@@ -1,19 +1,20 @@
 import NextLink from 'next/link';
-import s from './Link.module.css';
 import { ComponentProps } from 'react';
-import { DesignSystem, Variant } from '@/0_shared/types';
 import { cn } from '@/0_shared/utils';
+import { DesignSystem, Variant } from '@/0_shared/types';
+import s from './Link.module.css';
 
 export type LinkProps = { variant?: Variant; isUnderline?: boolean } & ComponentProps<typeof NextLink> & DesignSystem;
 
 export const Link = (props: LinkProps) => {
   const {
-    color = 'primary',
-    size = 'l',
+    color = 'default',
+    size = 'm',
     borderRadius = 'medium',
     gap = '1',
     isUnderline,
     variant = 'ghost',
+    className,
     ...anotherProps
   } = props;
 
@@ -23,7 +24,8 @@ export const Link = (props: LinkProps) => {
     s[`color-${color}`],
     `size-${size}`,
     `gap-${gap}`,
-    `br-${borderRadius}`
+    `br-${borderRadius}`,
+    className
   );
 
   return <NextLink className={classNames.build({ [s.underline]: isUnderline })} {...anotherProps} />;
