@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.ai-center {
+  align-items: center;
+}
+
 .pt-1 {
   padding-top: var(--gap);
 }

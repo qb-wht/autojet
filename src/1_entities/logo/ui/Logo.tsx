@@ -12,10 +12,10 @@ const nunito = Nunito({
 export const Logo = () => {
   return (
     <div className={cn(s.logo, nunito.className).build()}>
-      <Text className={s.mainText}>AUTOJET</Text>
+      <Text className={s.mainText}>AutoJet</Text>
 
-      <Chip>
-        <Text className={s.subText}>COLOR</Text>
+      <Chip className={s.chip} size="m">
+        <Text className={s.subText}>color</Text>
       </Chip>
     </div>
   );

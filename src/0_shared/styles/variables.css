@@ -61,12 +61,12 @@
   --color-text-inner-0: white;
   --color-text-inner-inverse-0: white;
 
-  --gap: 4px;
+  --gap: 0.25rem;
 
   --height-header: calc(10 * var(--gap));
   --height-footer: calc(80 * var(--gap));
 
   --animation-duration: 0.2s;
 
-  --max-width: 1200px;
+  --max-width: calc(300 * var(--gap));
 }

@@ -1,13 +1,15 @@
 import { Link } from '@/0_shared/components/link';
 import { Logo } from '@/1_entities/logo';
 import { Button } from '@/0_shared/components/button';
-import { LogIn, Mail, Phone, Send, ShoppingCart } from 'lucide-react';
+import { LogIn, ShoppingCart } from 'lucide-react';
+import { Text } from '@/0_shared/components/text';
+import s from './Header.module.css';
 
 export const Header = () => {
   return (
     <div className="center">
       <div className="width">
-        <div className="column gap-2 pt-2">
+        <div className="column gap-2 pt-2 pr-2 pl-2">
           <div className="row">
             <div className="row">
               <Link href={'/'}>Home</Link>
@@ -15,20 +17,24 @@ export const Header = () => {
             </div>
 
             <div className="row width-auto">
-              <Link href={'./'}>
-                <LogIn size={16} /> Войти
+              <Link href={'./'} gap="1">
+                <LogIn size={16} />
+                Войти
               </Link>
             </div>
           </div>
 
           <div className="row">
-            <div className="row pl-2">
+            <div className="row ai-center pl-2">
               <Logo />
             </div>
 
             <div className="row width-auto">
-              <Button borderRadius="round">
-                <ShoppingCart size={20} /> Корзина
+              <Button borderRadius="round" gap="2">
+                <ShoppingCart size={20} />
+                <Text tag="span" className={s.cartText}>
+                  Корзина
+                </Text>
               </Button>
             </div>
           </div>

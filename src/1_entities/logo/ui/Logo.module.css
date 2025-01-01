@@ -4,10 +4,16 @@
 }
 
 .mainText {
-  font-size: 38px;
+  font-size: calc(var(--gap) * 7);
+  text-transform: uppercase;
 }
 
 .subText {
-  font-size: 24px;
-  padding-top: 2.5px;
+  font-size: calc(var(--gap) * 5);
+  text-transform: uppercase;
+}
+
+/* TODO: D Design system нет возможности задать padding, а может и не нужно? */
+.logo .chip {
+  padding: 0 calc(var(--gap) * 2);
 }

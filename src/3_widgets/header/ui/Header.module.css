@@ -1,0 +1,9 @@
+.cartText {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .cartText {
+    display: none;
+  }
+}
