@@ -12,9 +12,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="ru">
       <body className={roboto.className}>
-        <Header />
+        <div className="pt-2 pl-2 pr-2 min-height-100">
+          <Header />
 
-        {children}
+          {children}
+        </div>
 
         <Footer />
       </body>

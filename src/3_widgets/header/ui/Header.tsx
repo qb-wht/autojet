@@ -9,15 +9,19 @@ export const Header = () => {
   return (
     <div className="center">
       <div className="width">
-        <div className="column gap-2 pt-2 pr-2 pl-2">
+        <div className="column gap-2">
           <div className="row">
             <div className="row">
-              <Link href={'/'}>Home</Link>
-              <Link href={'./about'}>About</Link>
+              <Link variant="link" color="primary" href={'/'}>
+                Home
+              </Link>
+              <Link variant="link" color="primary" href={'./about'}>
+                About
+              </Link>
             </div>
 
             <div className="row width-auto">
-              <Link href={'./'} gap="1">
+              <Link variant="link" color="primary" href={'./'} gap="1">
                 <LogIn size={16} />
                 Войти
               </Link>
@@ -40,11 +44,21 @@ export const Header = () => {
           </div>
 
           <div className="row">
-            <Link href={'/buttons'}>Buttons</Link>
-            <Link href={'./chips'}>Chips</Link>
-            <Link href={'./inputs'}>Inputs</Link>
-            <Link href={'./links'}>Links</Link>
-            <Link href={'./texts'}>Texts</Link>
+            <Link variant="link" color="primary" href={'/buttons'}>
+              Buttons
+            </Link>
+            <Link variant="link" color="primary" href={'./chips'}>
+              Chips
+            </Link>
+            <Link variant="link" color="primary" href={'./inputs'}>
+              Inputs
+            </Link>
+            <Link variant="link" color="primary" href={'./links'}>
+              Links
+            </Link>
+            <Link variant="link" color="primary" href={'./texts'}>
+              Texts
+            </Link>
           </div>
         </div>
       </div>

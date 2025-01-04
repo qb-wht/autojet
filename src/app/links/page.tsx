@@ -43,6 +43,18 @@ export const Links = () => {
         Ghost
       </Link>
 
+      <Link href="./links" color="primary" variant="link" borderRadius="round">
+        Link
+      </Link>
+
+      <Link href="./links" color="secondary" variant="link" borderRadius="round">
+        Link
+      </Link>
+
+      <Link href="./links" color="default" variant="link" borderRadius="round">
+        Link
+      </Link>
+
       <h1>Color</h1>
 
       <Link href="./links" color="secondary" variant="fill" borderRadius="round">
