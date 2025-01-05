@@ -5,24 +5,29 @@ import s from './BannerSlider.module.css';
 import { Banner } from './Banner';
 import { Slider } from '@/0_shared/components/slider';
 
-export type BannerSliderProps = {} & PropsOf<HTMLDivElement>;
+export type BannerSliderItem = {
+  width: number;
+  height: number;
+  href?: string;
+  src: string;
+  alt: string;
+  text: string;
+};
+
+export type BannerSliderProps = {
+  items: BannerSliderItem[];
+} & PropsOf<HTMLDivElement>;
 
 export const BannerSlider = (props: BannerSliderProps) => {
-  const { className, ...anotherProps } = props;
+  const { className, items, ...anotherProps } = props;
   const classNames = cn(s.bannerSlider, className).build();
 
   return (
     <div className={classNames} {...anotherProps}>
       <Slider className={s.slider}>
-        <Banner width={181} height={181} src="/0.png" alt="Banner" text="Новые компоненты" />
-        <Banner width={181} height={181} src="/1.png" alt="Banner" text="Где найти код краски?" />
-        <Banner width={181} height={181} src="/2.png" alt="Banner" text="Узнать код краски  по WIN" />
-        <Banner width={181} height={181} src="/3.png" alt="Banner" text="Сила новых компонентов" />
-        <Banner width={181} height={181} src="/4.png" alt="Banner" text="Слабость это сила" />
-        <Banner width={181} height={181} src="/5.png" alt="Banner" text="Комплектом выгоднее" />
-        <Banner width={181} height={181} src="/5.png" alt="Banner" text="Комплектом выгоднее" />
-        <Banner width={181} height={181} src="/5.png" alt="Banner" text="Комплектом выгоднее" />
-        <Banner width={181} height={181} src="/5.png" alt="Banner" text="Комплектом выгоднее" />
+        {items.map(({ width, height, src, alt, text, href }, i) => (
+          <Banner key={i} width={width} height={height} src={src} alt={alt} text={text} href={href} />
+        ))}
       </Slider>
     </div>
   );

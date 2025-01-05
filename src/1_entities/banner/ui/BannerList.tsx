@@ -5,7 +5,7 @@ import { Banner } from './Banner';
 
 export type BannerListItem = {
   href?: string;
-  url: string;
+  src: string;
   alt: string;
   text: string;
 };
@@ -20,8 +20,8 @@ export const BannerList = (props: BannerListProps) => {
 
   return (
     <div className={classNames} {...anotherProps}>
-      {items.map((item, index) => (
-        <Banner width={583} height={100} text={item.text} href={item.href} key={index} src={item.url} alt={item.alt} />
+      {items.map(({ text, href, src, alt }, i) => (
+        <Banner width={583} height={100} text={text} href={href} key={i} src={src} alt={alt} />
       ))}
     </div>
   );

@@ -1,6 +1,5 @@
 .slider {
   position: relative;
-  height: 10rem;
 }
 
 .chevronLeft,
@@ -10,13 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: calc(var(--gap) * 8);
+  height: calc(var(--gap) * 8);
   background-color: var(--color-background-0);
   border-radius: 50%;
   cursor: pointer;
-  top: calc(50% - 1.25rem);
-  box-shadow: 0 0 0.5rem 1px var(--color-text-7);
+  top: calc(50% - calc(var(--gap) * 5));
+  box-shadow: 0 0 calc(var(--gap) * 2) 1px var(--color-text-7);
 
   &:hover {
     transform: scale(1.1);
@@ -24,17 +23,17 @@
 
   &:active {
     transform: scale(1);
-    box-shadow: 0 0 0.25rem 1px var(--color-text-7);
+    box-shadow: 0 0 var(--gap) 1px var(--color-text-7);
   }
 }
 
 .chevronLeft {
-  left: -2.25rem;
+  left: calc(var(--gap) * 9 * -1);
   padding-right: 2px;
 }
 
 .chevronRight {
-  right: -2.25rem;
+  right: calc(var(--gap) * 9 * -1);
   padding-left: 2px;
 }
 

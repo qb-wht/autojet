@@ -1,11 +1,84 @@
 import { Text } from '@/0_shared/components/text';
-import { Banner, BannerList, BannerSlider } from '@/1_entities/banner';
+import { BannerList, BannerSlider } from '@/1_entities/banner';
 
 export const Home = () => {
   return (
     <div className="page">
       <div className="width column pt-2 gap-4">
-        <BannerSlider />
+        <BannerSlider
+          items={[
+            {
+              width: 181,
+              height: 201,
+              src: '/1.png',
+              alt: 'Banner',
+              text: 'Где найти код краски?',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/2.png',
+              alt: 'Banner',
+              text: 'Узнать код краски по WIN',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/3.png',
+              alt: 'Banner',
+              text: 'Сила новых компонентов',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/4.png',
+              alt: 'Banner',
+              text: 'Слабость это сила',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/5.png',
+              alt: 'Banner',
+              text: 'Комплектом выгоднее',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/1.png',
+              alt: 'Banner',
+              text: 'Где найти код краски?',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/2.png',
+              alt: 'Banner',
+              text: 'Узнать код краски по WIN',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/3.png',
+              alt: 'Banner',
+              text: 'Сила новых компонентов',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/4.png',
+              alt: 'Banner',
+              text: 'Слабость это сила',
+            },
+            {
+              width: 181,
+              height: 201,
+              src: '/5.png',
+              alt: 'Banner',
+              text: 'Комплектом выгоднее',
+            },
+          ]}
+        />
 
         <Text tag="h2">Категории</Text>
 
@@ -32,13 +105,13 @@ export const Home = () => {
         <BannerList
           items={[
             {
-              url: '/banner.png',
+              src: '/banner.png',
               alt: 'Banner',
               text: 'Статья. Как экономить на кузовном ремонте?',
             },
 
             {
-              url: '/banner2.png',
+              src: '/banner2.png',
               alt: 'Banner',
               text: 'Как подобрать цвет к автомобилю?',
             },
@@ -66,13 +139,13 @@ export const Home = () => {
         <BannerList
           items={[
             {
-              url: '/banner3.png',
+              src: '/banner3.png',
               alt: 'Banner',
               text: 'Статья. Как экономить на кузовном ремонте?',
             },
 
             {
-              url: '/banner4.png',
+              src: '/banner4.png',
               alt: 'Banner',
               text: 'Как подобрать цвет к автомобилю?',
             },

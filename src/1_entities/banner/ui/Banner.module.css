@@ -13,7 +13,7 @@
 
 .image {
   transition: all var(--animation-duration);
-  border-radius: 0.5rem;
+  border-radius: calc(var(--gap) * 2);
 }
 
 .banner {
