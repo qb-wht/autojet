@@ -1,7 +1,128 @@
+import { Text } from '@/0_shared/components/text';
+import { Banner, BannerList, BannerSlider } from '@/1_entities/banner';
+
 export const Home = () => {
   return (
     <div className="page">
-      <h1>Home</h1>
+      <div className="width column pt-2 gap-4">
+        <BannerSlider />
+
+        <Text tag="h2">Категории</Text>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '4rem' }}></div>
+        </div>
+
+        <Text tag="h2">Подкраска</Text>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <BannerList
+          items={[
+            {
+              url: '/banner.png',
+              alt: 'Banner',
+              text: 'Статья. Как экономить на кузовном ремонте?',
+            },
+
+            {
+              url: '/banner2.png',
+              alt: 'Banner',
+              text: 'Как подобрать цвет к автомобилю?',
+            },
+          ]}
+        />
+
+        <Text tag="h2">Баллончики</Text>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <BannerList
+          items={[
+            {
+              url: '/banner3.png',
+              alt: 'Banner',
+              text: 'Статья. Как экономить на кузовном ремонте?',
+            },
+
+            {
+              url: '/banner4.png',
+              alt: 'Banner',
+              text: 'Как подобрать цвет к автомобилю?',
+            },
+          ]}
+        />
+
+        <Text tag="h2">Эмаль по коду цвета автомобиля</Text>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <Text tag="h2">Расходные материалы</Text>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+
+        <div style={{ gap: '8px' }} className="row">
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+          <div style={{ borderRadius: '1rem', background: 'gray', width: '100%', height: '17rem' }}></div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,45 @@
+.slider {
+  position: relative;
+  height: 10rem;
+}
+
+.chevronLeft,
+.chevronRight {
+  transition: all var(--animation-duration);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-background-0);
+  border-radius: 50%;
+  cursor: pointer;
+  top: calc(50% - 1.25rem);
+  box-shadow: 0 0 0.5rem 1px var(--color-text-7);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+    box-shadow: 0 0 0.25rem 1px var(--color-text-7);
+  }
+}
+
+.chevronLeft {
+  left: -2.25rem;
+  padding-right: 2px;
+}
+
+.chevronRight {
+  right: -2.25rem;
+  padding-left: 2px;
+}
+
+.line {
+  transition: transform var(--animation-duration);
+  display: flex;
+  position: absolute;
+}

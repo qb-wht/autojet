@@ -25,10 +25,10 @@ import s from './<%= h.changeCase.pascal(layerName) %>.module.css';
 <%_ if (props) { _%>
 export const <%= h.changeCase.pascal(layerName) %> = (props: <%= h.changeCase.pascal(layerName) %>Props) => {
   const { className, ...anotherProps } = props;
-  const classNames = cn(s.text, className).build();
+  const classNames = cn(s.<%= h.changeCase.camel(layerName) %>, className).build();
 
   return (
-    <div className={s.<%= h.changeCase.camel(layerName) %>} {...anotherProps}>
+    <div className={classNames} {...anotherProps}>
       <%= h.changeCase.pascal(layerName) %>
     </div>
   );
