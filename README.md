@@ -1,4 +1,4 @@
-# Project Autojet
+# Autojet Client
 
 ```bash
 npm run dev
