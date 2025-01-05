@@ -1,7 +1,7 @@
+import { Banner } from './Banner';
 import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
 import s from './BannerList.module.css';
-import { Banner } from './Banner';
 
 export type BannerListItem = {
   href?: string;

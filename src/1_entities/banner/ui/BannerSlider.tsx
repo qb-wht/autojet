@@ -1,9 +1,9 @@
 'use client';
+import { Banner } from './Banner';
+import { Slider } from '@/0_shared/components/slider';
 import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
 import s from './BannerSlider.module.css';
-import { Banner } from './Banner';
-import { Slider } from '@/0_shared/components/slider';
 
 export type BannerSliderItem = {
   width: number;
