@@ -21,7 +21,7 @@ export const Header = () => {
             </div>
 
             <div className="row width-auto">
-              <Link variant="link" color="primary" href={'./'} gap="1">
+              <Link variant="link" color="primary" href={'./auth'} gap="1">
                 <LogIn size={16} />
                 Войти
               </Link>

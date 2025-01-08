@@ -1,0 +1,14 @@
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  background-color: var(--color-text-8);
+}
+
+.text {
+  padding: var(--gap) calc(var(--gap) * 2);
+  background-color: var(--color-background-0);
+  color: var(--color-text-4);
+}

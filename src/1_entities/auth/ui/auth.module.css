@@ -1,0 +1,21 @@
+.form {
+  margin-top: calc(var(--gap) * 4);
+  display: flex;
+  padding: calc(var(--gap) * 8) calc(var(--gap) * 6);
+  border-radius: calc(var(--gap) * 2);
+  flex-direction: column;
+  box-shadow: 0 0 var(--gap) 0 var(--color-text-6);
+  gap: calc(var(--gap) * 6);
+  width: calc(var(--gap) * 96);
+}
+
+.label {
+  font-size: calc(var(--gap) * 3);
+  height: calc(var(--gap) * 4);
+  padding: 0;
+  color: var(--color-text-2);
+
+  span {
+    color: var(--color-primary);
+  }
+}
