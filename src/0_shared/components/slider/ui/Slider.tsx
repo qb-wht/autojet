@@ -1,7 +1,8 @@
 'use client';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
+import { useUnsafeEffect } from '@/0_shared/libs/hooks';
 import { PropsOf } from '@/0_shared/types';
 import { cn } from '@/0_shared/utils';
 import s from './Slider.module.css';
@@ -20,7 +21,7 @@ export const Slider = (props: SliderProps) => {
   const classNames = cn(s.slider, className).build();
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useUnsafeEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 

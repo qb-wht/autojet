@@ -1,6 +1,6 @@
 import { Link } from '@/0_shared/components/link';
 
-export const Links = () => {
+const Links = () => {
   return (
     <div className="page column gap-2">
       <h1>Border radius</h1>

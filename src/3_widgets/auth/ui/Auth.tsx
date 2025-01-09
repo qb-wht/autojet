@@ -1,11 +1,12 @@
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useLayoutEffect, useState } from 'react';
+import { useState } from 'react';
 import { ChangePassword } from '@/2_features/auth/changePassword';
 import { ForgotPassword } from '@/2_features/auth/forgotPassword';
 import { Login } from '@/2_features/auth/login';
 import { Register } from '@/2_features/auth/register';
+import { useUnsafeLayoutEffect } from '@/0_shared/libs/hooks';
 import { PropsOf } from '@/0_shared/types';
 import { cn } from '@/0_shared/utils';
 import s from './Auth.module.css';
@@ -32,7 +33,7 @@ export const Auth = (props: AuthProps) => {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  useLayoutEffect(() => {
+  useUnsafeLayoutEffect(() => {
     const authType = searchParams.get('type');
 
     if (authType && isAuthType(authType)) {

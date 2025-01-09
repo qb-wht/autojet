@@ -1,7 +1,7 @@
 import { BannerList, BannerSlider } from '@/1_entities/banner';
 import { Text } from '@/0_shared/components/text';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="page">
       <div className="width column pt-2 gap-4">

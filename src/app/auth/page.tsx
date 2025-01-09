@@ -1,9 +1,12 @@
+import { Suspense } from 'react';
 import { Auth as AuthWidget } from '@/3_widgets/auth';
 
 const Auth = () => {
   return (
     <div className="page center">
-      <AuthWidget />
+      <Suspense fallback="<div>Loading</div>">
+        <AuthWidget />
+      </Suspense>
     </div>
   );
 };

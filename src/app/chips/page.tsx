@@ -1,6 +1,6 @@
 import { Chip } from '@/0_shared/components/chip';
 
-export const Chips = () => {
+const Chips = () => {
   return (
     <div className="page column gap-2">
       <h1>Border radius</h1>

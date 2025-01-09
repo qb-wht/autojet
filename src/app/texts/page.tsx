@@ -5,7 +5,7 @@ const json = `{
   "a": "b"
 }`;
 
-export const Texts = () => {
+const Texts = () => {
   return (
     <div className="page column gap-2">
       <h1>Tags</h1>

@@ -1,7 +1,7 @@
 import { LockKeyhole, Mail, Phone, Send } from 'lucide-react';
 import { Input } from '@/0_shared/components/input';
 
-export const Chips = () => {
+const Chips = () => {
   return (
     <div className="page column gap-2">
       <h1>Border radius</h1>

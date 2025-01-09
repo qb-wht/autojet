@@ -1,6 +1,6 @@
 import { Button } from '@/0_shared/components/button';
 
-export const Buttons = () => {
+const Buttons = () => {
   return (
     <div className="page column gap-2">
       <h1>Border radius</h1>

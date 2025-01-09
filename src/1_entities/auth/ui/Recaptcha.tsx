@@ -11,6 +11,8 @@ export const Recaptcha = (props: RecaptchaProps) => {
 
   const [recaptchaValue, setRecaptchaValue] = useState<Nullable<string>>();
 
+  console.log(recaptchaValue);
+
   return (
     <div style={{ transform: 'scale(1.1)' }} className={classNames} {...anotherProps}>
       <ReCAPTCHA sitekey={process.env.GOOGLE_RECAPTCHA_SECRET_KEY} onChange={(value) => setRecaptchaValue(value)} />
