@@ -1,5 +1,5 @@
-import { Text } from '@/0_shared/components/text';
 import { BannerList, BannerSlider } from '@/1_entities/banner';
+import { Text } from '@/0_shared/components/text';
 
 export const Home = () => {
   return (

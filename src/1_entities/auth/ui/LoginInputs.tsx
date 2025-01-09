@@ -1,9 +1,9 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Input } from '@/0_shared/components/input';
 import { LockKeyhole, Mail } from 'lucide-react';
-import { Text } from '@/0_shared/components/text';
+import { Input } from '@/0_shared/components/input';
 import { Link } from '@/0_shared/components/link';
+import { Text } from '@/0_shared/components/text';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './auth.module.css';
 
 export type LoginInputsProps = {

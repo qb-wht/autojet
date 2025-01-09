@@ -1,1 +1,1 @@
-export {Chip} from './ui/Chip';
+export { Chip } from './ui/Chip';

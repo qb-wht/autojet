@@ -1,8 +1,9 @@
 'use client';
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Slider.module.css';
 
 export type SliderProps = {

@@ -1,9 +1,9 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Text } from '@/0_shared/components/text';
-import { ForgotPasswordInputs } from './ForgotPasswordInputs';
 import { Button } from '@/0_shared/components/button';
 import { Link } from '@/0_shared/components/link';
+import { Text } from '@/0_shared/components/text';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
+import { ForgotPasswordInputs } from './ForgotPasswordInputs';
 import s from './auth.module.css';
 
 export type ForgotPasswordFormProps = {

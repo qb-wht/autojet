@@ -1,1 +1,1 @@
-export {Divider} from './ui/Divider';
+export { Divider } from './ui/Divider';

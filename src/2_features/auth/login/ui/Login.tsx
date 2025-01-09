@@ -1,6 +1,6 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
 import { LoginForm } from '@/1_entities/auth';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Login.module.css';
 
 export type LoginProps = {} & PropsOf<HTMLDivElement>;

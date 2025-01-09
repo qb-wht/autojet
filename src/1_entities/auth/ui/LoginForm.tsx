@@ -1,13 +1,13 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Text } from '@/0_shared/components/text';
-import { Link } from '@/0_shared/components/link';
-import { LoginInputs } from './LoginInputs';
-import { AuthSocial } from './AuthSocial';
+import { api } from '@/0_shared/api';
 import { Button } from '@/0_shared/components/button';
 import { Divider } from '@/0_shared/components/divider';
+import { Link } from '@/0_shared/components/link';
+import { Text } from '@/0_shared/components/text';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
+import { AuthSocial } from './AuthSocial';
+import { LoginInputs } from './LoginInputs';
 import { Recaptcha } from './Recaptcha';
-import { api } from '@/0_shared/api';
 import s from './auth.module.css';
 
 export type LoginFormProps = {

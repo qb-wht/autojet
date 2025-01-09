@@ -1,5 +1,5 @@
-import { cn, ClassNameMods } from '@/0_shared/utils';
 import { PropsOf, DesignSystem, Variant } from '@/0_shared/types';
+import { cn, ClassNameMods } from '@/0_shared/utils';
 import s from './Button.module.css';
 
 export type ButtonProps = { disable?: boolean; variant?: Variant } & PropsOf<HTMLButtonElement> & DesignSystem;

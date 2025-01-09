@@ -1,5 +1,5 @@
-import { cn } from '@/0_shared/utils';
 import { DesignSystem, PropsOf, Variant } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Chip.module.css';
 
 export type ChipProps = { variant?: Variant } & PropsOf<HTMLDivElement> & DesignSystem;

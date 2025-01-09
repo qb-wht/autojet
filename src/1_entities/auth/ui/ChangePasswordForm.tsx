@@ -1,8 +1,8 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Text } from '@/0_shared/components/text';
-import { ChangePasswordInputs } from './ChangePasswordInputs';
 import { Button } from '@/0_shared/components/button';
+import { Text } from '@/0_shared/components/text';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
+import { ChangePasswordInputs } from './ChangePasswordInputs';
 import s from './auth.module.css';
 
 export type ChangePasswordFormProps = {} & PropsOf<HTMLDivElement>;

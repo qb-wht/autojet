@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import { ComponentProps } from 'react';
-import { cn } from '@/0_shared/utils';
 import { DesignSystem, Variant } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Link.module.css';
 
 export type LinkProps = { variant?: Variant | 'link'; isUnderline?: boolean } & ComponentProps<typeof NextLink> &

@@ -1,6 +1,6 @@
 import { Nunito } from 'next/font/google';
-import { Text } from '@/0_shared/components/text';
 import { Chip } from '@/0_shared/components/chip';
+import { Text } from '@/0_shared/components/text';
 import { cn } from '@/0_shared/utils';
 import s from './Logo.module.css';
 

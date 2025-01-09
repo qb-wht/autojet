@@ -1,7 +1,7 @@
-import ReCAPTCHA from 'react-google-recaptcha';
 import { useState } from 'react';
-import { cn } from '@/0_shared/utils';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Nullable, PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 
 export type RecaptchaProps = {} & PropsOf<HTMLDivElement>;
 

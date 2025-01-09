@@ -1,6 +1,6 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
 import { ForgotPasswordForm } from '@/1_entities/auth/ui/ForgotPasswordForm';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './ForgotPassword.module.css';
 
 export type ForgotPasswordProps = {} & PropsOf<HTMLDivElement>;

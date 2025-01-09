@@ -1,5 +1,5 @@
-import { Input } from '@/0_shared/components/input';
 import { LockKeyhole, Mail, Phone, Send } from 'lucide-react';
+import { Input } from '@/0_shared/components/input';
 
 export const Chips = () => {
   return (

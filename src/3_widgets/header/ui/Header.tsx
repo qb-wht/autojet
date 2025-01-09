@@ -1,7 +1,7 @@
-import { Link } from '@/0_shared/components/link';
+import { LogIn, ShoppingCart } from 'lucide-react';
 import { Logo } from '@/1_entities/logo';
 import { Button } from '@/0_shared/components/button';
-import { LogIn, ShoppingCart } from 'lucide-react';
+import { Link } from '@/0_shared/components/link';
 import { Text } from '@/0_shared/components/text';
 import s from './Header.module.css';
 

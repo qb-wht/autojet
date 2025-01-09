@@ -1,8 +1,8 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Input } from '@/0_shared/components/input';
 import { LockKeyhole } from 'lucide-react';
+import { Input } from '@/0_shared/components/input';
 import { Text } from '@/0_shared/components/text';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './auth.module.css';
 
 export type ChangePasswordInputsProps = {} & PropsOf<HTMLDivElement>;

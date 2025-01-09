@@ -1,7 +1,7 @@
-import { cn } from '@/0_shared/utils';
-import { PropsOf } from '@/0_shared/types';
-import { Button } from '@/0_shared/components/button';
 import { FaGoogle, FaTelegram, FaYandex } from 'react-icons/fa';
+import { Button } from '@/0_shared/components/button';
+import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 
 export type AuthSocialProps = {} & PropsOf<HTMLDivElement>;
 

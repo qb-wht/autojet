@@ -1,5 +1,5 @@
-import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import { Text } from '../../text';
 import s from './Divider.module.css';
 

@@ -1,7 +1,7 @@
 import { LucideProps } from 'lucide-react';
-import { cn } from '@/0_shared/utils';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 import { DesignSystem, PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Input.module.css';
 
 export type InputProps = {

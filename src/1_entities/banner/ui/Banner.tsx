@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import { M_PLUS_Rounded_1c } from 'next/font/google';
+import Image from 'next/image';
 import NextLink from 'next/link';
 import { Text } from '@/0_shared/components/text';
-import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
 import s from './Banner.module.css';
 
 export type BannerProps = {

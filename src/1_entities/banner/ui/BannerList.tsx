@@ -1,6 +1,6 @@
-import { Banner } from './Banner';
-import { cn } from '@/0_shared/utils';
 import { PropsOf } from '@/0_shared/types';
+import { cn } from '@/0_shared/utils';
+import { Banner } from './Banner';
 import s from './BannerList.module.css';
 
 export type BannerListItem = {

@@ -1,5 +1,5 @@
-import { Text } from '@/0_shared/components/text';
 import { Pre } from '@/0_shared/components/pre';
+import { Text } from '@/0_shared/components/text';
 
 const json = `{
   "a": "b"
